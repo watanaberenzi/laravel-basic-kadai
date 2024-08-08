@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
- // ルーティングを設定するコントローラを宣言する
-use App\Http\Controllers\PostsController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/posts', [PostsController::class, 'index']);
+Route::get('/posts', [PostController::class, 'index']);
